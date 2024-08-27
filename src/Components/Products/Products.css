@@ -1,0 +1,10 @@
+.products {
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.products h4 {
+    font-family: 'Cinzel', serif;
+    color: #545454;
+    font-size: 32px;
+}

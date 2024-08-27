@@ -1,0 +1,136 @@
+.menu {
+    background-color: #FF3131;
+    width: 100%;
+    padding: 15px;
+}
+
+.menu .items-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .items-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu .items-menu:hover {
+    cursor: pointer;
+}
+
+.menu .nav-itens ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu .nav-itens ul .active {
+    background-color: #FF5E64;
+    border-radius: 15%;
+    padding: 5px;
+}
+
+.menu .nav-itens ul li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu .nav-itens ul li:hover {
+    cursor: pointer;
+}
+
+.menu .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu .contact:hover {
+    cursor: pointer;
+}
+
+.menu .contact .whatsapp-icon {
+    font-size: 24px;
+    color: green;
+}
+
+.menu .contact p {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.menu .exit {
+    color: #ffffff;
+}
+
+.menu .hamburguer {
+    color: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle svg {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu .nav-itens {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #FF3131;
+        padding: 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        align-items: flex-end;
+    }
+
+    .menu .nav-itens.open {
+        display: flex;
+        max-height: 300px;
+        left: -23px;
+    }
+
+    .menu .nav-itens ul {
+        background-color: none;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu .nav-itens ul li {
+        text-align: right;
+        font-size: 12px !important;
+    }
+
+    .menu .contact .whatsapp-icon {
+        font-size: 15px;
+    }
+
+    .menu .contact p {
+        font-size: 12px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

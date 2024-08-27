@@ -1,0 +1,28 @@
+.button{
+    font-family: 'Cinzel', serif;
+}
+
+.button button{
+    background-color: #FF5E64;
+    width: 210px;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button button:hover {
+    background-color: #FF3131; 
+    transform: scale(1.05); 
+}
+
+.button button .whatsapp {
+    color: #fff;
+    font-size: 20px;
+}
