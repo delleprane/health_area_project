@@ -9,7 +9,7 @@
     font-size: 32px;
 }
 
-.products .teste{
+.products .product-container{
     margin: 0 90px;
     position: relative;
     z-index: 1;
@@ -21,7 +21,7 @@
     font-size: 22px;
     }
 
-    .products .teste{
+    .products .product-container{
         margin: 0 10px;
     }
 }

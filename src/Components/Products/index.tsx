@@ -47,7 +47,7 @@ export function Products() {
     return (
         <div className='products' >
             <h4>Procedimentos</h4>
-            <div className='teste'>
+            <div className='product-container'>
             <Carousel slides={slides}/>
             </div>
         </div>
