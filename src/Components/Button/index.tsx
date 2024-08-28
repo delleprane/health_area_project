@@ -1,11 +1,32 @@
 import './Button.css'
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaSearch, FaWhatsapp } from 'react-icons/fa';
 
-export function Button() {
+interface ButtonProps {
+    content: string;
+    onClick?: () => void;
+    className: string;
+    icon?: 'whatsapp' | 'search';
+}
+
+
+
+export function Button({ content, onClick, className, icon }: ButtonProps) {
+
+    const renderIcon = () => {
+        switch (icon) {
+            case 'whatsapp':
+                return <FaWhatsapp />;
+            case 'search':
+                return <FaSearch />;
+            default:
+                return null;
+        }
+    };
+
     return (
-        <div className='button'>
-            <button>
-                <FaWhatsapp className='whatsapp' /> Agende uma consulta
+        <div className={`button ${className ? className : ''}`}>
+            <button onClick={onClick}>
+                {renderIcon()} {content}
             </button>
         </div>
     )

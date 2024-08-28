@@ -2,6 +2,8 @@
     background-color: #FF3131;
     width: 100%;
     padding: 15px;
+    /* position: fixed;
+    z-index: 10; */
 }
 
 .menu .items-menu {
@@ -103,14 +105,14 @@
 
     .menu .nav-itens.open {
         display: flex;
+        padding-right: 100px;
         max-height: 300px;
-        left: -23px;
+        left: 0;
     }
 
     .menu .nav-itens ul {
         background-color: none;
         display: flex;
-        padding: 0;
         width: 100%;
         align-items: flex-end;
         flex-direction: column;

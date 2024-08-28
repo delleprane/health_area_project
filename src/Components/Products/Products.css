@@ -8,3 +8,20 @@
     color: #545454;
     font-size: 32px;
 }
+
+.products .teste{
+    margin: 0 90px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .products h4 {
+    font-size: 22px;
+    }
+
+    .products .teste{
+        margin: 0 10px;
+    }
+}
