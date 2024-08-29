@@ -1,0 +1,55 @@
+.approach{
+    width: 100%;
+}
+
+.approach .approach-container{
+    padding: 20px;
+}
+
+.approach .approach-container .title{
+    font-family: 'Cinzel', serif;
+    color: #545454;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.approach .approach-container .title img{
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+}
+
+.approach .approach-container .title .strikethrough{
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+}
+
+.approach .approach-container .about-information{
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    color: #545454;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.approach .approach-container .about-information p{
+font-size: 24px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .approach .approach-container .title img{
+        width: 260px;
+    }
+
+   
+    .approach .approach-container .title .strikethrough{
+        font-size: 26px;
+    }
+
+    .approach .approach-container .about-information p{
+        font-size: 18px;
+    }
+}
