@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-.products h4 {
+.products h2 {
     font-family: 'Cinzel', serif;
     color: #545454;
     font-size: 32px;
@@ -17,7 +17,7 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .products h4 {
+    .products h2 {
     font-size: 22px;
     }
 

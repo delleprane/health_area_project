@@ -6,9 +6,9 @@ export function Approach() {
             <div className="approach-container">
                 <div className="title">
                     <img src='/images/backgroud-title.png' alt="Background" />
-                    <h1 className="strikethrough">
+                    <h2 className="strikethrough">
                         Nossa Abordagem
-                    </h1>
+                    </h2>
                 </div>
                 <div className="about-information">
                     <p>
