@@ -10,9 +10,9 @@
 }
 
 .products .product-container{
-    margin: 0 90px;
+    margin: 0 40px;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Mantém o z-index do container */
 }
 
 /* Mobile styles */

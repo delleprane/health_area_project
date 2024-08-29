@@ -51,14 +51,10 @@
 .banner .button-container {
     display: flex;
     justify-content: left; 
-    margin-right: 20px;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .banner{
-        width: 95%;
-    }
     .banner .information {
         flex-direction: column;
         text-align: center; 

@@ -24,7 +24,7 @@
 
 
 .carousel-card {
-    min-height: 750px;
+    min-height: 600px;
     height: auto !important;
     width: 100%; 
     text-align: center;
@@ -66,36 +66,27 @@
     white-space: normal; 
 }
 
-.swiper-button-prev, .swiper-button-prev:after{
-    left: -1;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
+    color: #545454 !important;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    padding: 10px;
+    transform: translateY(-50%) !important;
+    z-index: 1000 !important;
     position: absolute !important;
-    top: 50% !important; 
-    transform: translateY(-50%); 
     width: 30px !important;
     height: 30px !important;
 }
 
-.swiper-button-prev {
-    left: -20px !important;
+
+ /* .swiper-button-prev {
+    left: -40px !important; 
 }
 
 .swiper-button-next {
-    right: -20px !important; 
-}
-
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    color: #545454;
-    position: absolute !important;
-    font-size: 30px !important; 
-}
-
-
+    right: -40px !important; 
+}  */
 
 
 /* Mobile styles */
@@ -110,7 +101,7 @@
 }
 
 .carousel-card {
-    min-height: 650px;
+    min-height: 450px;
 }
 
 .carousel-image {
@@ -124,5 +115,11 @@
 .carousel-content{
     font-size: 12px;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+display: none !important;
+}
+
 
 }

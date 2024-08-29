@@ -6,9 +6,11 @@ import { Products } from './Components/Products';
 function App() {
   return (
     <div className="App">
-      <Menu/>
-      <Banner/>
-      <Products/>
+      <div className="container">
+        <Menu />
+        <Banner />
+        <Products/>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const TruncatedText: React.FC<{ content: string }> = ({ content }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     // Limite de caracteres antes de truncar
-    const CHARACTER_LIMIT = 900;
+    const CHARACTER_LIMIT = 451;
 
     // Verifica se o texto deve ser truncado
     const shouldTruncate = content.length > CHARACTER_LIMIT;
