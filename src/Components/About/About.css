@@ -24,7 +24,6 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 .about .infos .video iframe {
@@ -86,6 +85,10 @@ h3 {
     .about .infos {
         display: block;
         align-items: center;
+    }
+
+    .about .infos .video{
+        margin-bottom: 30px;
     }
 
     .about .infos .video iframe {

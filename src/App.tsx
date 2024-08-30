@@ -10,12 +10,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Menu />
+        <Menu menuItem={true}/>
         <Banner />
         <Products/>
         <About/>
         <Approach/>
         <Contact/>
+        <Menu menuItem={false}/>
       </div>
     </div>
   );
