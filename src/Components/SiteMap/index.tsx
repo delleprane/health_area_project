@@ -1,10 +1,10 @@
-import './Contact.css';
+import './SiteMap.css';
 import { FaSearch, FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
-export function Contact() {
+export function SiteMap() {
     return (
-        <div className="contact-channel">
-            <div className="contact-container">
+        <div className="sitemap">
+            <div className="sitemap-container">
                 <h2>Nossas redes sociais</h2>
                 <div className="social">
                     <div className="social-midia"><ul>

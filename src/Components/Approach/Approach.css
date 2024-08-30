@@ -1,6 +1,6 @@
 .approach{
     width: 100%;
-    margin-bottom: 65px;
+    margin-bottom: 20px;
 }
 
 .approach .approach-container{
@@ -43,6 +43,10 @@ font-size: 24px;
 
 /* Mobile styles */
 @media (max-width: 768px) {
+    .approach {
+        margin-bottom: 0;
+    }
+
     .approach .approach-container .title img{
         width: 260px;
     }

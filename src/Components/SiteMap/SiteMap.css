@@ -1,36 +1,36 @@
-.contact-channel {
-    margin-bottom: 65px;
+.sitemap {
+    margin-bottom: 30px;
     width: 100%;
 }
 
-.contact-channel .contact-container {
+.sitemap .sitemap-container {
     padding: 20px;
 }
 
-.contact-channel .contact-container h2 {
+.sitemap .sitemap-container h2 {
     text-align: center;
     font-size: 32px;
     font-family: 'Cinzel', serif;
     color: #545454;
 }
 
-.contact-channel .contact-container .social {
+.sitemap .sitemap-container .social {
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
 
-.contact-channel .contact-container .social .social-midia {
+.sitemap .sitemap-container .social .social-midia {
     width: 100%;
 }
 
-.contact-channel .contact-container .social .social-midia li {
+.sitemap .sitemap-container .social .social-midia li {
     list-style: none;
     flex: 1;
     display: flex;
 }
 
-.contact-channel .contact-container .social .social-midia li a {
+.sitemap .sitemap-container .social .social-midia li a {
     text-decoration: none;
     color: #545454;
     font-size: 16px;
@@ -38,7 +38,7 @@
     display: flex;
 }
 
-.contact-channel .contact-container .social .social-midia li a svg {
+.sitemap .sitemap-container .social .social-midia li a svg {
     background-color: #FF5E64;
     padding: 5px;
     border-radius: 10px;
@@ -49,89 +49,89 @@
     margin-bottom: 30px;
 }
 
-.contact-channel .contact-container .social .map {
+.sitemap .sitemap-container .social .map {
     flex: 1;
     padding-right: 30px;
 }
 
-.contact-channel .contact-container .social .map iframe {
+.sitemap .sitemap-container .social .map iframe {
 
     width: 500px;
 }
 
-.contact-channel .contact-container .utils {
+.sitemap .sitemap-container .utils {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
 
-.contact-channel .contact-container .utils h3 {
+.sitemap .sitemap-container .utils h3 {
     text-align: center;
     font-size: 28px;
     font-family: 'Cinzel', serif;
     color: #545454;
 }
 
-.contact-channel .contact-container .utils li {
+.sitemap .sitemap-container .utils li {
     list-style: none;
     font-size: 16x;
     font-family: 'Cinzel', serif;
     color: #545454;
 }
 
-.contact-channel .contact-container .utils li:first-child {
+.sitemap .sitemap-container .utils li:first-child {
     margin-top: 0;
 }
 
-.contact-channel .contact-container .utils li a {
+.sitemap .sitemap-container .utils li a {
     text-decoration: none;
     color: #545454;
     font-size: 16px;
     font-family: 'Cinzel', serif;
 }
 
-.contact-channel .contact-container .utils li svg {
+.sitemap .sitemap-container .utils li svg {
     color: #FF5E64;
     margin-right: 10px;
 }
 
-.contact-channel .contact-container .utils .contact-number li {
+.sitemap .sitemap-container .utils .contact-number li {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
-.contact-channel .contact-container .utils .service .bold {
+.sitemap .sitemap-container .utils .service .bold {
     font-weight: bold;
     font-family: 'Cinzel', serif;
     color: #545454;
 }
 
-.contact-channel .contact-container .utils .service p {
+.sitemap .sitemap-container .utils .service p {
     text-align: center;
 }
 
-.contact-channel .contact-container .utils .links ul {
+.sitemap .sitemap-container .utils .links ul {
     text-align: center;
     padding: 0;
 }
 
-.contact-channel .contact-container .utils .links li {
+.sitemap .sitemap-container .utils .links li {
     margin-top: 10px;
 }
 
-.contact-channel .contact-container .utils .links li:first-child {
+.sitemap .sitemap-container .utils .links li:first-child {
     margin-top: 0;
 }
 
-.contact-channel .contact-container .utils .location {
+.sitemap .sitemap-container .utils .location {
     font-weight: bold;
     font-family: 'Cinzel', serif;
     color: #545454;
     font-size: 20px;
 }
 
-.contact-channel .contact-container .utils .location p {
+.sitemap .sitemap-container .utils .location p {
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -142,83 +142,83 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .contact-channel .contact-container .social {
+    .sitemap .sitemap-container .social {
         display: grid;
     }
 
-    .contact-channel .contact-container .social .social-midia li {
+    .sitemap .sitemap-container .social .social-midia li {
         align-items: center;
         justify-content: center;
         display: flex;
     }
 
-    .contact-channel .contact-container ul {
+    .sitemap .sitemap-container ul {
         padding: 0;
     }
 
-    .contact-channel .contact-container li {
+    .sitemap .sitemap-container li {
         justify-content: center;
     }
 
-    .contact-channel .contact-container .utils li {
+    .sitemap .sitemap-container .utils li {
         font-size: 14px;
     }
 
-    .contact-channel .contact-container .utils li a {
+    .sitemap .sitemap-container .utils li a {
         font-size: 14px;
     }
 
-    .contact-channel .contact-container .social .social-midia li a {
+    .sitemap .sitemap-container .social .social-midia li a {
         font-size: 14px;
     }
 
-    .contact-channel .contact-container li a {
+    .sitemap .sitemap-container li a {
         font-size: 14px;
     }
 
-    .contact-channel .contact-container .social .social-midia {
+    .sitemap .sitemap-container .social .social-midia {
         display: flex;
         justify-content: center;
     }
 
-    .contact-channel .contact-container .social .social-midia li {
+    .sitemap .sitemap-container .social .social-midia li {
         display: block;
     }
 
-    .contact-channel .contact-container .social .map {
+    .sitemap .sitemap-container .social .map {
         padding: 0;
         margin: 0 auto;
     }
 
-    .contact-channel .contact-container .social .map iframe {
-        width: 300px;
-        height: 300px;
+    .sitemap .sitemap-container .social .map iframe {
+        width: 250px;
+        height: 250px;
     }
 
-    .contact-channel .contact-container .service p {
+    .sitemap .sitemap-container .service p {
         font-size: 14px;
     }
 
 
-    .contact-channel .contact-container .utils {
+    .sitemap .sitemap-container .utils {
         display: grid;
         justify-content: center;
     }
 
-    .contact-channel .contact-container .utils h3 {
+    .sitemap .sitemap-container .utils h3 {
         font-size: 22px;
     }
 
-    .contact-channel .contact-container .utils .contact-number li {
+    .sitemap .sitemap-container .utils .contact-number li {
         display: block;
         padding-left: 60px;
     }
 
-    .contact-channel .contact-container .utils .links {
+    .sitemap .sitemap-container .utils .links {
         text-align: center;
     }
 
-    .contact-channel .contact-container .utils .location {
+    .sitemap .sitemap-container .utils .location {
         text-align: center;
         font-size: 14px;
     }

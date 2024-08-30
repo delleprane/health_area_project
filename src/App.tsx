@@ -2,7 +2,7 @@ import './App.css';
 import { About } from './Components/About';
 import { Approach } from './Components/Approach';
 import { Banner } from './Components/Banner';
-import { Contact } from './Components/Contact';
+import { SiteMap } from './Components/SiteMap';
 import { Menu } from './Components/Menu';
 import { Products } from './Components/Products';
 
@@ -15,7 +15,7 @@ function App() {
         <Products/>
         <About/>
         <Approach/>
-        <Contact/>
+        <SiteMap/>
         <Menu menuItem={false}/>
       </div>
     </div>
