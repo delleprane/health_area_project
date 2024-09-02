@@ -36,6 +36,9 @@
     font-size: 16px;
     font-family: 'Cinzel', serif;
     display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .sitemap .sitemap-container .social .social-midia li a svg {
@@ -45,8 +48,6 @@
     color: #fff;
     height: 15px;
     width: 15px;
-    margin-right: 10px;
-    margin-bottom: 30px;
 }
 
 .sitemap .sitemap-container .social .map {
@@ -184,6 +185,11 @@
     .sitemap .sitemap-container .social .social-midia li {
         display: block;
     }
+
+    .sitemap .sitemap-container .social .social-midia li a{
+        align-items: center;
+    }
+
 
     .sitemap .sitemap-container .social .map {
         padding: 0;
