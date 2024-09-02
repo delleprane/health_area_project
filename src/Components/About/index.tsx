@@ -12,12 +12,10 @@ export function About() {
                         <iframe
                             width="400"
                             height="500"
-                            src="https://www.youtube.com/embed/zJVbrIDuTEU?loop=1&playlist=zJVbrIDuTEU&controls=0&showinfo=0"
+                            src="https://www.youtube.com/embed/xmGaAjeqaBQ?autoplay=1&loop=1&playlist=xmGaAjeqaBQ&controls=0&showinfo=0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             frameBorder="0"
                         ></iframe>
-
-
                     </div>
                     <div className='text'>
                         <h2>Dra. Ana Carolina</h2>
