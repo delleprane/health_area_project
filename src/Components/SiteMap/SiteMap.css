@@ -1,17 +1,17 @@
 .sitemap {
-    margin-bottom: 30px;
+    margin-bottom: var(--max-large-space);
     width: 100%;
 }
 
 .sitemap .sitemap-container {
-    padding: 20px;
+    padding: var(--large-space);
 }
 
 .sitemap .sitemap-container h2 {
     text-align: center;
-    font-size: 32px;
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    font-size: var(--font-size-title);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 .sitemap .sitemap-container .social {
@@ -32,9 +32,9 @@
 
 .sitemap .sitemap-container .social .social-midia li a {
     text-decoration: none;
-    color: #545454;
-    font-size: 16px;
-    font-family: 'Cinzel', serif;
+    color: var(--text-color);
+    font-size: var(--font-size-sub-title-mobile);
+    font-family: var(--font-family-primary);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -42,17 +42,17 @@
 }
 
 .sitemap .sitemap-container .social .social-midia li a svg {
-    background-color: #FF5E64;
-    padding: 5px;
+    background-color: var(--primary-color);
+    padding: var( --small-space);
     border-radius: 10px;
     color: #fff;
-    height: 15px;
-    width: 15px;
+    height: var(--medium-space);
+    width: var(--medium-space);
 }
 
 .sitemap .sitemap-container .social .map {
     flex: 1;
-    padding-right: 30px;
+    padding-right: var( --max-large-space);
 }
 
 .sitemap .sitemap-container .social .map iframe {
@@ -68,16 +68,16 @@
 
 .sitemap .sitemap-container .utils h3 {
     text-align: center;
-    font-size: 28px;
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    font-size: var(--font-size-title-mobile);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 .sitemap .sitemap-container .utils li {
     list-style: none;
-    font-size: 16x;
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    font-size: var(--font-size-sub-title-mobile);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 .sitemap .sitemap-container .utils li:first-child {
@@ -86,26 +86,27 @@
 
 .sitemap .sitemap-container .utils li a {
     text-decoration: none;
-    color: #545454;
-    font-size: 16px;
-    font-family: 'Cinzel', serif;
+    color: var(--text-color);
+    font-size: var(--font-size-sub-title-mobile);
+    font-family: var(--font-family-primary)
 }
 
 .sitemap .sitemap-container .utils li svg {
-    color: #FF5E64;
-    margin-right: 10px;
+    color: var( --primary-color);
 }
 
-.sitemap .sitemap-container .utils .contact-number li {
+.sitemap .sitemap-container .utils .contact-number li a{
     margin-top: 10px;
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .sitemap .sitemap-container .utils .service .bold {
-    font-weight: bold;
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 .sitemap .sitemap-container .utils .service p {
@@ -127,16 +128,16 @@
 }
 
 .sitemap .sitemap-container .utils .location {
-    font-weight: bold;
-    font-family: 'Cinzel', serif;
-    color: #545454;
-    font-size: 20px;
+    font-weight: var(--font-bold);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
+    font-size: var(--large-space);
 }
 
 .sitemap .sitemap-container .utils .location a {
-    font-size: 14px;
+    font-size: var(--font-size-content-mobile);
     text-decoration: none;
-    color: #545454;
+    color: var(--font-bold);
 
 }
 
@@ -153,6 +154,14 @@
         display: flex;
     }
 
+    .sitemap .sitemap-container .social .social-midia li a svg{
+        border-radius: 8px;
+        color: #fff;
+        height: 12px;
+        width: 12px;
+
+    }
+
     .sitemap .sitemap-container ul {
         padding: 0;
     }
@@ -162,19 +171,19 @@
     }
 
     .sitemap .sitemap-container .utils li {
-        font-size: 14px;
+        font-size: var(--font-size-content-mobile);
     }
 
     .sitemap .sitemap-container .utils li a {
-        font-size: 14px;
+        font-size:  var(--font-size-content-mobile);
     }
 
     .sitemap .sitemap-container .social .social-midia li a {
-        font-size: 14px;
+        font-size:  var(--font-size-content-mobile);
     }
 
     .sitemap .sitemap-container li a {
-        font-size: 14px;
+        font-size:  var(--font-size-content-mobile);
     }
 
     .sitemap .sitemap-container .social .social-midia {
@@ -202,7 +211,7 @@
     }
 
     .sitemap .sitemap-container .service p {
-        font-size: 14px;
+        font-size:  var(--font-size-content-mobile);
     }
 
 
@@ -212,7 +221,7 @@
     }
 
     .sitemap .sitemap-container .utils h3 {
-        font-size: 22px;
+        font-size:  var(--font-size-sub-title-mobile);
     }
 
     .sitemap .sitemap-container .utils .contact-number li {
@@ -226,7 +235,7 @@
 
     .sitemap .sitemap-container .utils .location {
         text-align: center;
-        font-size: 14px;
+        font-size:  var(--font-size-content-mobile);
     }
 
 }

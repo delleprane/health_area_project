@@ -1,19 +1,19 @@
 .approach{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: var(--large-space);
 }
 
 .approach .approach-container{
-    padding: 20px;
+    padding: var(--large-space);
 }
 
 .approach .approach-container .title{
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--large-space);
 }
 
 .approach .approach-container .title img{
@@ -25,20 +25,20 @@
 .approach .approach-container .title .strikethrough{
     position: relative;
     z-index: 2;
-    font-size: 32px;
+    font-size: var(--font-size-title);
 }
 
 .approach .approach-container .about-information{
-    font-family: 'Cinzel', serif;
-    font-weight: lighter;
-    color: #545454;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-lighter);
+    color: var(--text-color);
     width: 100%;
     text-align: center;
     margin: 0 auto;
 }
 
 .approach .approach-container .about-information p{
-font-size: 24px;
+font-size: var(--font-size-sub-title);
 }
 
 /* Mobile styles */
@@ -53,10 +53,10 @@ font-size: 24px;
 
    
     .approach .approach-container .title .strikethrough{
-        font-size: 26px;
+        font-size: var( --font-size-carousel-title);
     }
 
     .approach .approach-container .about-information p{
-        font-size: 18px;
+        font-size: var(--font-size-sub-title-mobile);
     }
 }

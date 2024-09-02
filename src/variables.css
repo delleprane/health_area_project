@@ -1,0 +1,53 @@
+/* variables.css */
+
+/* Core Colors */
+:root {
+    --primary-color: #FF3131;
+    --second-color: #FF5E64;
+
+    --text-color: #545454;
+    --background: #f6d6e8;
+    --background-second: rgba(246, 214, 232, 0.5);
+}
+
+/* Font Families */
+:root {
+    --font-family-primary:'Cinzel', serif;
+    --font-family-secondary: 'Arial', sans-serif;
+}
+
+/* Font Sizes */
+:root {
+    --font-size-title: 32px;
+    --font-size-sub-title: 22px;
+    --font-size-content: 20px;
+    --font-size-carousel-title:26px;
+
+    --font-size-title-mobile: 22px;
+    --font-size-sub-title-mobile: 16px;
+    --font-size-content-mobile: 14px;
+}
+
+/* Font Sizes */
+:root{
+    --font-lighter: lighter;
+    --font-bold: bold;
+}
+
+/* Spaces Sizes */
+:root{
+    --max-large-space: 60px;
+    --large-space: 30px;
+    --medium-space: 15px;
+    --small-space:10px;
+    -max-small-space: 5px;
+}
+
+
+/* Sizes */
+:root{
+    --max-large-space: 30px;
+    --large-space: 20px;
+    --medium-space: 15px;
+    --small-space: 5px
+    }

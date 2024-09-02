@@ -1,16 +1,16 @@
 .banner {
-    background-color: #f6d6e8;
-    padding: 30px;
-    margin-bottom: 30px;
-    font-family: 'Cinzel', serif;
-    color: #545454;
+    background-color: var( --background);
+    padding: var(--large-space);
+    margin-bottom: var(--large-space);
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 .banner .information {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: var(--small-space);
 }
 
 .banner .information .text {
@@ -18,18 +18,18 @@
 }
 
 .banner .information .text h1 {
-    font-size: 32px;
-    font-weight: lighter;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-lighter);
 }
 
 .banner .information .text h2 {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: var(--font-size-sub-title);
+    font-weight: var(--font-bold);
 }
 
 .banner .information .text p {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size:var(--font-size-content);
+    font-weight: var(--font-lighter);
 }
 
 .banner .information .text,
@@ -65,15 +65,15 @@
     }
 
     .banner .information .text h1{
-        font-size: 26px;
+        font-size: var(--font-size-title-mobile);
     }
 
     .banner .information .text h2{
-        font-size: 20px;
+        font-size: var(--font-size-sub-title-mobile);
     }
 
     .banner .information .text p{
-        font-size: 16px;
+        font-size:var(--font-size-content-mobile);
     }
 
     .banner .information .image{
@@ -83,7 +83,7 @@
     }
 
     .banner .button-container {
-        margin-top: 20px; 
+        margin-top: var(--large-space); 
         justify-content: center; 
     }
 }

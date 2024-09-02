@@ -1,28 +1,35 @@
 .button{
-    font-family: 'Cinzel', serif;
+    font-family:var(--font-family-primary);
 }
 
 .button button{
-    background-color: #FF5E64;
+    background-color: var(--second-color);
     width: 210px;
     color: #fff;
-    padding: 15px;
+    padding: var(--medium-space);
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: var(--small-space);
     border: none; 
     border-radius: 50px; 
-    font-size: 16px; 
+    font-size: var(--font-size-sub-title-mobile); 
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .button button:hover {
-    background-color: #FF3131; 
+    background-color: var(--primary-color); 
     transform: scale(1.05); 
 }
 
 .button button .whatsapp {
     color: #fff;
-    font-size: 20px;
+    font-size: var( --large-space);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .button button{
+        font-size: var(--font-size-content-mobile);
+    }
 }

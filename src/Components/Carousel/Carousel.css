@@ -2,7 +2,7 @@
     width: 100%;
     overflow: hidden;
     margin: 0 30px;
-    padding-bottom: 30px;
+    padding-bottom: var(--max-large-space);
 }
 
 .swiper-wrapper {
@@ -11,11 +11,11 @@
 }
 
 .swiper-pagination{
-    bottom: 20px !important;
+    bottom: var(--max-large-space) !important;
 }
 
 .swiper-pagination-bullet{
-    background-color: #FF5E64 !important;
+    background-color: var(--primary-color) !important;
 }
 
 .swiper-slide {
@@ -31,7 +31,7 @@
 .carousel-card {
     height: auto !important;
     width: 100%; 
-    margin-bottom: 20px;
+    margin-bottom: var(--large-space);
     text-align: center;
 }
 
@@ -54,21 +54,21 @@
 
 .carousel-title,
 .carousel-content {
-    font-family: 'Cinzel', sans-serif;
-    color: #545454;
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 
 .carousel-title {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: var(--font-size-carousel-title);
+    font-weight: var(--font-bold);
 }
 
 
 .carousel-content {
-    font-size: 16px;
-    font-weight: lighter;
-    margin-top: 20px;
+    font-size: var(--font-size-content);
+    font-weight: var(--font-lighter);
+    margin-top: var(--large-space);
     white-space: normal;
     overflow-wrap: break-word; 
     word-break: break-word; 
@@ -96,10 +96,10 @@
 }
 
 .carousel-title {
-    font-size: 16px;
+    font-size: var(--font-size-sub-title-mobile);
 }
 
 .carousel-content{
-    font-size: 12px;
+    font-size:var(--font-size-content-mobile);
 }
 }

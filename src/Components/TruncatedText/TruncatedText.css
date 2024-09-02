@@ -8,6 +8,6 @@
 /* Mobile styles */
 @media (max-width: 768px) {
     .read-more-btn button {
-        font-size: 15px;
+        font-size: var(--font-size-content-mobile);
     }
 }
