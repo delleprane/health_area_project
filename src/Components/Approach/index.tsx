@@ -2,7 +2,7 @@ import './Approach.css';
 
 export function Approach() {
     return (
-        <div className="approach">
+        <div id='abordagem' className="approach">
             <div className="approach-container">
                 <div className="title">
                     <img src='/images/backgroud-title.png' alt="Background" />

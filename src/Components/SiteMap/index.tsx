@@ -1,15 +1,32 @@
+import { useState } from 'react';
 import './SiteMap.css';
 import { FaSearch, FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
+type MenuItem = 'Home' | 'Procedimentos' | 'Sobre' | 'Abordagem' | 'Contato';
+
 export function SiteMap() {
+    const whatsappMessage ="Olá, vim pelo site e gostaria de fazer um agendamento"
+
+    const [activeItem, setActiveItem] = useState<MenuItem | ''>('');
+
+    
+    const handleItemClick = (item: MenuItem) => {
+        setActiveItem(item);
+
+        const section = document.getElementById(item.toLowerCase().replace(/\s+/g, '-'));
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className="sitemap">
+        <div id="contato" className="sitemap">
             <div className="sitemap-container">
                 <h2>Nossas redes sociais</h2>
                 <div className="social">
                     <div className="social-midia"><ul>
-                        <li><a href="#"><FaInstagram /> @dra_anacarolina</a></li>
-                        <li> <a href="#"><FaInstagram /> @clinica_anacarolina</a></li>
+                        <li><a href="https://www.instagram.com/dra_anacarolina" target="_blank" rel="noopener noreferrer"><FaInstagram /> @dra_anacarolina</a></li>
+                        <li> <a href="https://www.instagram.com/dra_anacarolina" target="_blank" rel="noopener noreferrer"><FaInstagram /> @clinica_anacarolina</a></li>
                     </ul>
                     </div>
                     <div className="map">
@@ -28,8 +45,8 @@ export function SiteMap() {
                     <div className="contact-number">
                         <h3>Contato</h3>
                         <ul>
-                            <li><a><FaWhatsapp /> (11) 000-0000</a> </li>
-                            <li><a><FaEnvelope /> teste@teste.com</a> </li>
+                            <li><a href={`https://wa.me/559529673204?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer"><FaWhatsapp /> (11) 000-0000</a> </li>
+                            <li><a href="mailto:teste@teste.com" ><FaEnvelope /> teste@teste.com</a> </li>
                         </ul>
                     </div>
                     <div className="service">
@@ -53,15 +70,18 @@ export function SiteMap() {
                     <div className="links">
                         <h3>Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Nossa abordagem</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li onClick={() => handleItemClick('Home')}>Home</li>
+                            <li onClick={() => handleItemClick('Procedimentos')}>Procedimentos</li>
+                            <li onClick={() => handleItemClick('Sobre')}>Sobre</li>
+                            <li onClick={() => handleItemClick('Abordagem')}>Nossa abordagem</li>
+                            <li onClick={() => handleItemClick('Contato')}>Contato</li>
                         </ul>
                     </div>
                     <div className="location">
                         <h3>Localização</h3>
-                        <p>Av. Teixeira de Leon-900, São Paulo/SP</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Teixeira%20de%20Leon-900,%20São%20Paulo/SP" target="_blank" rel="noopener noreferrer">
+                            Av. Teixeira de Leon-900, São Paulo/SP
+                        </a>
                     </div>
                 </div>
             </div>

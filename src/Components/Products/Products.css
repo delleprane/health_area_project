@@ -1,18 +1,13 @@
 .products {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
     text-align: center;
+    max-width: 100%;
 }
 
 .products h2 {
     font-family: 'Cinzel', serif;
     color: #545454;
     font-size: 32px;
-}
-
-.products .product-container{
-    margin: 0 40px;
-    position: relative;
-    z-index: 1; /* Mantém o z-index do container */
 }
 
 /* Mobile styles */

@@ -26,11 +26,20 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={20}
-            slidesPerView={3}
-            loop={true}
-            navigation
+        modules={[Pagination, Scrollbar, A11y]}
+        spaceBetween={20}
+        breakpoints={{
+            // Quando a largura da tela for >= 768px
+            768: {
+                slidesPerView: 3, 
+            },
+            // Quando a largura da tela for < 768px
+            0: {
+                slidesPerView: 'auto', 
+            }
+        }}
+        loop={true}
+        pagination={{ clickable: true }} 
         >
             {slides.map((slide, index) => (
                 <SwiperSlide key={index}>

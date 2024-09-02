@@ -18,7 +18,9 @@ export function Banner() {
                     <div className='button-container'>
                         <Button content={'agende uma consulta'}
                         className='' 
-                        icon='whatsapp'/>
+                        icon='whatsapp'
+                        message="Olá, vim pelo site e gostaria de fazer um agendamento"
+                        />
                     </div>
                 </div>
                 <div className='image'>

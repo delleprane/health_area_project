@@ -118,6 +118,7 @@
 
 .sitemap .sitemap-container .utils .links li {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .sitemap .sitemap-container .utils .links li:first-child {
@@ -131,11 +132,10 @@
     font-size: 20px;
 }
 
-.sitemap .sitemap-container .utils .location p {
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-break: break-word;
+.sitemap .sitemap-container .utils .location a {
     font-size: 14px;
+    text-decoration: none;
+    color: #545454;
 
 }
 

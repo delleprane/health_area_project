@@ -1,9 +1,6 @@
 .menu {
     background-color: #FF3131;
-    /* width: 100%; */
     padding: 15px;
-    /* position: fixed;
-    z-index: 10; */
 }
 
 .menu .items-menu {
@@ -47,14 +44,15 @@
     cursor: pointer;
 }
 
-.menu .contact {
+.menu .contact:hover {
+    cursor: pointer;
+}
+
+.menu .contact a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.menu .contact:hover {
-    cursor: pointer;
 }
 
 .menu .contact .whatsapp-icon {
