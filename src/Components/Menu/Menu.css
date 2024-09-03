@@ -1,8 +1,18 @@
 @import '../../variables.css';
 
 .menu {
-    background-color:  var(--primary-color);
     padding: var(--medium-space);
+    background-color: var(--primary-color);
+}
+
+.top {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.hidden.top {
+    transform: translateY(-100%);
 }
 
 .menu .items-menu {
@@ -29,7 +39,7 @@
 }
 
 .menu .nav-itens ul .active {
-    background-color: var( --background-second);
+    background-color: var(--background-second);
     border-radius: 3px;
     padding: 5px 10px;
 }
@@ -96,7 +106,7 @@
         right: 0;
         width: 100%;
         background-color: var(--primary-color);
-        padding: var( --medium-space);
+        padding: var(--medium-space);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
@@ -122,7 +132,7 @@
 
     .menu .nav-itens ul li {
         text-align: right;
-        font-size: var(--font-size-content-mobile)!important;
+        font-size: var(--font-size-content-mobile) !important;
         padding: 10px 0px;
     }
 

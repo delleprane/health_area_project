@@ -1,13 +1,16 @@
 import './Menu.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
-type MenuItem = 'Home' | 'Procedimentos' | 'Sobre' | 'Abordagem' | 'Contato' ;
+type MenuItem = 'Home' | 'Procedimentos' | 'Sobre' | 'Abordagem' | 'Contato';
 type MenuProps = { menuItem?: boolean }
 
 function Menu({ menuItem }: MenuProps) {
     const [activeItem, setActiveItem] = useState<MenuItem | ''>('');
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const [isVisible, setIsVisible] = useState<boolean>(true);
+    const [lastScrollY, setLastScrollY] = useState<number>(0);
+    const [isAtTop, setIsAtTop] = useState<boolean>(true);
 
     const handleItemClick = (item: MenuItem) => {
         setActiveItem(item);
@@ -23,10 +26,40 @@ function Menu({ menuItem }: MenuProps) {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY) {
+                // Scroll para baixo, esconder menu
+                setIsVisible(false);
+            } else {
+                // Scroll para cima, mostrar menu
+                setIsVisible(true);
+            }
+
+            // Verifica se está no topo da página
+            if (currentScrollY === 0) {
+                setIsAtTop(true);
+            } else {
+                setIsAtTop(false);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
+
     const whatsappMessage = "Olá, vim pelo site e gostaria de fazer um agendamento!"
 
     return (
-        <div id='home' className="menu">
+        <div className={`menu ${isVisible ? 'visible' : 'hidden'} ${menuItem ? 'top' : 'footer'}`}>
             <div className="items-menu">
                 <img src="/images/logo.png" alt="menu icon" onClick={() => handleItemClick('Home')} />
                 {menuItem ?
@@ -66,7 +99,7 @@ function Menu({ menuItem }: MenuProps) {
                     </div> : null
                 }
                 <div className="contact">
-                <a href={`https://wa.me/559529673204?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://wa.me/559529673204?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className="whatsapp-icon" /> <p>Agende uma consulta</p>
                     </a>
                 </div>

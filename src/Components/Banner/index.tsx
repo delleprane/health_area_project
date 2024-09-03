@@ -3,7 +3,7 @@ import './Banner.css'
 
 export function Banner() {
     return (
-        <div className='banner'>
+        <div id='home' className='banner'>
             <div className='information'>
                 <div className='text'>
                     <h1>Dra. Ana Carolina</h1>
@@ -17,9 +17,9 @@ export function Banner() {
                     </p>
                     <div className='button-container'>
                         <Button content={'agende uma consulta'}
-                        className='' 
-                        icon='whatsapp'
-                        message="Olá, vim pelo site e gostaria de fazer um agendamento"
+                            className=''
+                            icon='whatsapp'
+                            message="Olá, vim pelo site e gostaria de fazer um agendamento"
                         />
                     </div>
                 </div>

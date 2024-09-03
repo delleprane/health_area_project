@@ -1,8 +1,8 @@
-.button{
-    font-family:var(--font-family-primary);
+.button {
+    font-family: var(--font-family-primary);
 }
 
-.button button{
+.button button {
     background-color: var(--second-color);
     width: 210px;
     color: #fff;
@@ -10,26 +10,27 @@
     display: flex;
     align-items: center;
     gap: var(--small-space);
-    border: none; 
-    border-radius: 50px; 
-    font-size: var(--font-size-sub-title-mobile); 
-    cursor: pointer; 
+    border: none;
+    border-radius: 50px;
+    font-size: var(--font-size-sub-title-mobile);
+    cursor: pointer;
+    justify-content: space-around;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .button button:hover {
-    background-color: var(--primary-color); 
-    transform: scale(1.05); 
+    background-color: var(--primary-color);
+    transform: scale(1.05);
 }
 
 .button button .whatsapp {
     color: #fff;
-    font-size: var( --large-space);
+    font-size: var(--large-space);
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .button button{
+    .button button {
         font-size: var(--font-size-content-mobile);
     }
 }
