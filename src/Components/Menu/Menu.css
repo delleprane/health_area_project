@@ -15,6 +15,10 @@
     transform: translateY(-100%);
 }
 
+.isTop.hidden{
+    transform: translateY(0);
+}
+
 .menu .items-menu {
     display: flex;
     justify-content: space-between;

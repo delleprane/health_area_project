@@ -3,7 +3,7 @@ import './Banner.css'
 
 export function Banner() {
     return (
-        <div id='home' className='banner'>
+        <div className='banner'>
             <div className='information'>
                 <div className='text'>
                     <h1>Dra. Ana Carolina</h1>

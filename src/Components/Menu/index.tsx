@@ -15,12 +15,17 @@ function Menu({ menuItem }: MenuProps) {
     const handleItemClick = (item: MenuItem) => {
         setActiveItem(item);
         setIsMenuOpen(false);
-
-        const section = document.getElementById(item.toLowerCase().replace(/\s+/g, '-'));
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+    
+        if (item === 'Home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const section = document.getElementById(item.toLowerCase().replace(/\s+/g, '-'));
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     };
+    
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -39,10 +44,10 @@ function Menu({ menuItem }: MenuProps) {
             }
 
             // Verifica se está no topo da página
-            if (currentScrollY === 0) {
-                setIsAtTop(true);
-            } else {
+            if (currentScrollY > 60) {
                 setIsAtTop(false);
+            } else {
+                setIsAtTop(true);
             }
 
             setLastScrollY(currentScrollY);
@@ -59,7 +64,7 @@ function Menu({ menuItem }: MenuProps) {
     const whatsappMessage = "Olá, vim pelo site e gostaria de fazer um agendamento!"
 
     return (
-        <div className={`menu ${isVisible ? 'visible' : 'hidden'} ${menuItem ? 'top' : 'footer'}`}>
+        <div className={`menu ${isVisible ? 'visible' : 'hidden'} ${isAtTop ? 'isTop' : ''} ${menuItem ? 'top' : 'footer'}`}>
             <div className="items-menu">
                 <img src="/images/logo.png" alt="menu icon" onClick={() => handleItemClick('Home')} />
                 {menuItem ?
