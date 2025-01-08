@@ -47,8 +47,21 @@
     padding: 20px 30px;
 }
 
+
+.card-button {
+    margin-top: 40px;
+    text-align: -webkit-center;
+}
+
+
 .carousel-card.expanded {
     max-height: none;
+}
+
+.swiper-slide ul li{
+    text-align: left;
+    font-family: var(--font-family-primary);
+    color: var(--text-color);
 }
 
 
@@ -74,10 +87,10 @@
     word-break: break-word; 
     white-space: normal; 
 }
-
+/* 
 .button{
     text-align: -webkit-center;
-}
+} */
 
 
 /* Mobile styles */
@@ -93,6 +106,10 @@
 .carousel-image {
     height: 150px;
     width: 300px;
+}
+
+.swiper-slide ul li{
+    font-size: var(--font-size-sub-title-mobile);
 }
 
 .carousel-title {

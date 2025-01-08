@@ -1,0 +1,143 @@
+{
+    "Menu": [
+        "Home",
+        "Procedimentos",
+        "Sobre",
+        "Abordagem",
+        "Contato"
+    ],
+    "Banner": {
+        "image": "/images/ana/professional_initial_photo.webp",
+        "title": "Dra. Ana Carolina",
+        "subTitle": "Beleza é sentir-se bem na própria pele.",
+        "content": "Combinando ciência, ética e cuidado personalizado, nossa missão é elevar sua autoestima e promover um envelhecimento saudável. Cada tratamento é pensado para valorizar os detalhes que fazem de você uma pessoa única, garantindo que você se sinta confiante e confortável em sua própria pele. Estamos aqui para cuidar de você com a dedicação e o respeito que você merece, sempre comprometidos com resultados que refletem sua beleza natural.",
+        "button": {
+            "content": "Agende uma Consulta",
+            "message": "Olá, vim pelo site e gostaria de fazer um agendamento"
+        }
+    },
+    "Procedures": {
+        "title": "Procedimentos",
+        "slides": [
+            {
+                "image": "/images/procedures/botox.webp",
+                "title": "Toxina Butolinica (BOTOX)",
+                "content": "A aplicação de Toxina Botulínica suaviza rugas e linhas de expressão bloqueando a comunicação entre nervos e músculos, proporcionando uma aparência jovem e relaxada. Também é indicada para controle da sudorese excessiva e enxaquecas crônicas.",
+                "list": [
+                    "Redução de linhas de expressão e rugas dinâmicas.",
+                    "Aparência rejuvenescida e descansada.",
+                    "Procedimento rápido e minimamente invasivo.",
+                    "Efeitos duradouros por até 6 meses."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Toxina Butolinica (BOTOX)"
+                }
+            },
+            {
+                "image": "/images/procedures/ultrassom.webp",
+                "title": "Tratamento com ultrassom",
+                "content": "O ultrassom micro e macrofocado usa ondas sonoras para estimular a produção de colágeno, promovendo lifting facial e contorno corporal. É uma técnica não invasiva que melhora a firmeza e definição da pele sem necessidade de cirurgia.",
+                "list": [
+                    "Lifting facial e corporal sem cortes.",
+                    "Estimulação natural do colágeno.",
+                    "Melhora da flacidez e textura da pele.",
+                    "Procedimento seguro e com rápida recuperação."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Tratamento com ultrassom"
+                }
+            },
+            {
+                "image": "/images/procedures/hialuronico.webp",
+                "title": "Ácido Hialurônico",
+                "content": "O Ácido Hialurônico hidrata a pele e restaura volume. Aplicado em áreas como lábios e sulcos nasogenianos, ele melhora a elasticidade, sendo ideal para rejuvenescimento e harmonização facial, proporcionando resultados naturais e imediatos.",
+                "list": [
+                    "Restauração do volume facial.",
+                    "Hidratação profunda da pele.",
+                    "Harmonização dos contornos faciais.",
+                    "Resultados imediatos e naturais."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Ácido Hialurônico"
+                }
+            },
+            {
+                "image": "/images/procedures/esvaziadores.webp",
+                "title": "Esvaziadores de Gordura",
+                "content": "Os esvaziadores de gordura são tratamentos estéticos que utilizam substâncias para eliminar gordura localizada. Eles atuam quebrando as células de gordura em áreas específicas do corpo, oferecendo resultados rápidos, não invasivos e complementando uma rotina saudável.",
+                "list": [
+                    "Redução de gordura localizada.",
+                    "Contorno corporal mais definido.",
+                    "Procedimento não invasivo e prático.",
+                    "Melhora da autoestima e bem-estar."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Esvaziadores de Gordura"
+                }
+            },
+            {
+                "image": "/images/procedures/capilares.webp",
+                "title": "Tratamentos Capilares",
+                "content": "Tratamentos capilares para queda de cabelo, dermatite e desequilíbrios do couro cabeludo, combinando tecnologia e cuidados personalizados. Eles promovem cabelos mais fortes, saudáveis e brilhantes, restaurando a vitalidade dos fios.",
+                "list": [
+                    "Redução da queda de cabelo.",
+                    "Couro cabeludo mais saudável.",
+                    "Fios mais fortes e brilhantes.",
+                    "Tratamento personalizado para cada necessidade."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Tratamentos Capilares"
+                }
+            },
+            {
+                "image": "/images/procedures/intimo.webp",
+                "title": "Procedimentos Íntimos Estéticos",
+                "content": "Procedimentos médicos avançados para melhorar a estética e funcionalidade da região íntima. Tratam flacidez, pigmentação e outras alterações, restaurando a autoconfiança com resultados seguros e duradouros.",
+                "list": [
+                    "Melhora estética e funcional.",
+                    "Aumento da autoestima.",
+                    "Procedimentos seguros e personalizados.",
+                    "Resultados naturais e duradouros."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Procedimentos Íntimos Estéticos"
+                }
+            },
+            {
+                "image": "/images/procedures/fenol.webp",
+                "title": "Peeling de Fenol",
+                "content": "O peeling de fenol é um tratamento estético que realiza a renovação profunda da pele, ideal para suavizar rugas profundas, manchas e cicatrizes. Ele estimula a regeneração celular, proporcionando uma pele mais jovem, renovada e com aparência mais uniforme.",
+                "list": [
+                    "Renovação profunda da pele.",
+                    "Suavização de rugas e linhas de expressão.",
+                    "Uniformização do tom da pele.",
+                    "Resultados visíveis a longo prazo."
+                ],
+                "button": {
+                    "content": "Agendar Consulta",
+                    "message": "Olá, vim pelo site e gostaria de fazer um agendamento para Peeling de Fenol"
+                }
+            }
+        ]
+    },
+    "About": {
+        "title": "Dra. Ana Carolina",
+        "subTitle": "CRM ST | 000.000",
+        "content": "Sempre fui motivada pela paixão de cuidar e impactar positivamente a vida das pessoas. Acredito que a verdadeira beleza está na harmonia entre o corpo e a mente. Desde o início da minha carreira, me dedico à medicina estética e à medicina funcional integrativa, buscando constantemente aprimorar meus conhecimentos. Me formei em Medicina pela Universidade Nove de Julho em São Paulo, em 2012. Sou membro da Academia Brasileira de Medicina Funcional Integrativa. Participando de cursos e congressos nacionais e internacionais, estou sempre atenta às inovações para oferecer o melhor aos meus pacientes. Minha missão é proporcionar uma abordagem holística, cuidando da saúde e da autoestima, valorizando a beleza de dentro para fora.",
+        "video": "/images/ana/dra-ana.mp4",
+        "button": {
+            "content": "Agende uma Consulta",
+            "message": "Olá, vim pelo site e gostaria de fazer um agendamento"
+        }
+    },
+    "Approach": {
+        "title": "Nossa Abordagem",
+        "content": "Nossa abordagem é fundamentada no cuidado integral e personalizado, com foco na saúde, autoestima e bem-estar de cada paciente. A Dra. Ana Carolina, com sua vasta experiência e formação especializada, combina a medicina estética e a medicina funcional integrativa para proporcionar tratamentos que vão além da superfície. Acreditamos que a verdadeira beleza é resultado do equilíbrio entre corpo e mente, e é por isso que nossa prática busca sempre oferecer um atendimento holístico. Estamos comprometidos em proporcionar resultados naturais e duradouros, respeitando as necessidades de cada paciente, com uma abordagem que valoriza a saúde e a autoestima em sua totalidade. Nosso objetivo é ajudar você a se sentir bem consigo mesmo, alcançando o equilíbrio entre saúde física e emocional, através de tratamentos de ponta e uma visão cuidadosa de cada detalhe."
+    }
+}
