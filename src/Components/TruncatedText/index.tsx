@@ -12,7 +12,7 @@ const TruncatedText: React.FC<TruncatedTextProps> = ({ content, list }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     // Limite de caracteres antes de truncar
-    const CHARACTER_LIMIT = 300;
+    const CHARACTER_LIMIT = 150;
 
     // Verifica se o texto deve ser truncado
     const shouldTruncate = content.length > CHARACTER_LIMIT;
@@ -37,13 +37,11 @@ const TruncatedText: React.FC<TruncatedTextProps> = ({ content, list }) => {
                 </ul>
             )}
 
+
             {shouldTruncate && (
-                <Button
-                    content={isExpanded ? 'Ver Menos' : 'Ver Mais'}
-                    onClick={toggleText}
-                    className="read-more-btn"
-                    icon='search'
-                />
+                <div className="button read-more-btn button" onClick={toggleText}>
+                    <p>{isExpanded ? 'Ver Menos' : 'Ver Mais'}</p>
+                </div>
             )}
         </div>
     );

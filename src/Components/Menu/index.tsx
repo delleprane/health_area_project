@@ -53,12 +53,15 @@ function Menu({ menuItem }: MenuProps) {
             className={`menu ${isVisible ? 'visible' : 'hidden'} ${isAtTop ? 'isTop' : ''} ${menuItem ? 'top' : 'footer'}`}
         >
             <div className="items-menu">
-                <img
-                    src="/images/logo/logo.png"
-                    alt="Logo da empresa"
-                    loading="lazy"
-                    onClick={() => handleItemClick('Home')}
-                />
+                {menuItem && (
+                    <img
+                        src="/images/logo/logo.png"
+                        alt="Logo da empresa"
+                        loading="lazy"
+                        onClick={() => handleItemClick('Home')}
+                    />
+                )}
+
                 {menuItem && (
                     <div className={`nav-itens ${isMenuOpen ? 'open' : ''}`}>
                         <ul>
@@ -81,19 +84,21 @@ function Menu({ menuItem }: MenuProps) {
                         </ul>
                     </div>
                 )}
-                
-                {!menuItem &&(
-                   <a href="https://dellepranestudio.com.br" target='_blank'> <img src="/images/logo/logo-full-white.webp" alt="logo Delleprane Studio" /></a>
+
+                {!menuItem && (
+                    <a href="https://dellepranestudio.com.br" target='_blank'> <img src="/images/logo/logo-full-white.webp" alt="logo Delleprane Studio" /></a>
                 )}
-                <div className="contact">
-                    <a
-                        href={`https://wa.me/559529673204?text=${encodeURIComponent(whatsappMessage)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaWhatsapp className="whatsapp-icon" /> <p>Agende uma consulta</p>
-                    </a>
-                </div>
+                {menuItem && (
+                    <div className="contact">
+                        <a
+                            href={`https://wa.me/559529673204?text=${encodeURIComponent(whatsappMessage)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaWhatsapp className="whatsapp-icon" /> <p>Agende uma consulta</p>
+                        </a>
+                    </div>
+                )}
                 {menuItem && (
                     <div
                         className="menu-toggle"

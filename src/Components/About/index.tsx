@@ -24,15 +24,16 @@ export function About() {
                         <h2>{title}</h2>
                         <h3>{subTitle}</h3>
                         <p>{content}</p>
-                        <Button
+                    </div>
+
+                </div>
+                
+                <Button
                             content={button.content}
                             className=""
                             icon="whatsapp"
                             message={button.message}
                         />
-                    </div>
-
-                </div>
             </div>
         </section>
     );

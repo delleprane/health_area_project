@@ -1,13 +1,13 @@
-.read-more-btn button {
-    width: 150px;
+.read-more-btn {
     justify-content: space-around;
     padding: 10px !important;
-    /* background: #545454 !important; */
+    font-family: var(--font-family-primary);
+    font-weight: bold;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .read-more-btn button {
+    .read-more-btn {
         font-size: var(--font-size-content-mobile);
     }
 }

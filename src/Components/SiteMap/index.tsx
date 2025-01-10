@@ -46,7 +46,7 @@ export function SiteMap() {
                         <h3>Contato</h3>
                         <ul>
                             <li><a href={`https://wa.me/559529673204?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer"><FaWhatsapp /> (11) 000-0000</a> </li>
-                            <li><a href="mailto:teste@teste.com" ><FaEnvelope /> teste@teste.com</a> </li>
+                            <li><a href="mailto:dellepranestudio@gmail.com" ><FaEnvelope /> dellepranestudio@gmail.com</a> </li>
                         </ul>
                     </div>
                     <div className="service">

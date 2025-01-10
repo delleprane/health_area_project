@@ -9,6 +9,7 @@
 .about .about-container {
     max-width: 1140px;
     margin: 0 auto;
+    align-content: center;
 }
 
 .about .infos {
@@ -18,7 +19,9 @@
 }
 
 .about .button{
-    float: left;
+    width: 100%;
+    text-align: -webkit-center;
+    padding: 20px 0;
 }
 
 .about .infos .video {
@@ -73,6 +76,12 @@ h3 {
     font-size: var(--font-size-content);
 }
 
+.footer .items-menu {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -86,6 +95,7 @@ h3 {
     .about .infos {
         display: block;
         align-items: center;
+        padding: 20px 15px;
     }
 
     .about .infos .video{
